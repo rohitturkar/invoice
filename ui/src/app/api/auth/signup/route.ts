@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { signupSchema } from "@/app/validation/auth";
-import User from "@/app/model/user";
-import connectDB from "@/app/services/db";
+import { signupSchema } from "@/validation/auth";
+import User from "@/model/user";
+import connectDB from "@/services/db";
 
 export async function POST(request: NextRequest) {
   await connectDB();
